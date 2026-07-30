@@ -66,20 +66,19 @@ export default function Home() {
         <Reveal className="max-w-[840px] mx-auto text-center">
           <Eyebrow center>Who we are</Eyebrow>
           <h2 className="text-[clamp(26px,3.2vw,38px)] mt-3.5 tracking-[-.01em]">We help survivors heal and reclaim their lives, and work with communities to prevent violence.</h2>
-          <p className="text-lg text-muted mt-5">Founded in [YEAR] in [LOCATION], we combine direct survivor support with community prevention — because ending violence takes both healing and change. We meet survivors where they are and move at the pace they choose.</p>
+          <p className="text-lg text-muted mt-5">Arise Strong Together is a Kenyan community-based organisation, registered in June 2025 and founded by a survivor of gender-based violence. We combine professional counselling with lived experience — walking with survivors through healing while working alongside women, youth, and the wider community to prevent violence and challenge the norms that allow it.</p>
         </Reveal>
       </Section>
 
       {/* STATS */}
       <Section variant="sage">
         <SectionHead eyebrow="Our impact" title="Change we can measure" />
-        <div className="grid gap-[22px] grid-cols-2 lg:grid-cols-4">
-          <Reveal><Stat n="[X]" label="survivors supported since [YEAR]" /></Reveal>
-          <Reveal><Stat n="[X]" label="community members reached" /></Reveal>
-          <Reveal><Stat n="[X]" label="people trained in prevention" /></Reveal>
-          <Reveal><Stat n="[X]" label="supported into work or enterprise" /></Reveal>
+        <div className="grid gap-[22px] grid-cols-1 sm:grid-cols-3">
+          <Reveal><Stat n="200" label="young women given free psychosocial support" /></Reveal>
+          <Reveal><Stat n="100" label="girls given free psychosocial support" /></Reveal>
+          <Reveal><Stat n="2025" label="registered as a community-based organisation" /></Reveal>
         </div>
-        <p className="text-center mt-6 text-[13px] text-muted italic">Placeholder figures — each needs a verified source before launch.</p>
+        <p className="text-center mt-6 text-[15px] text-muted max-w-[70ch] mx-auto">Beyond the numbers: the community is challenging harmful cultural norms, GBV cases are increasingly reported and handled in a survivor-centred way, and referral pathways are widely understood — with perpetrators more often held to account.</p>
       </Section>
 
       {/* PROGRAMS */}
@@ -103,10 +102,10 @@ export default function Home() {
       <Section variant="green">
         <div className="grid lg:grid-cols-[.9fr_1.1fr] gap-12 items-center">
           <Reveal>
-            <Eyebrow className="text-[#bfe0d3]">A story of rising</Eyebrow>
-            <blockquote className="font-display text-[clamp(24px,2.8vw,32px)] leading-[1.32] mt-[18px]">“For the first time, I felt believed. That was where everything began to change.”</blockquote>
-            <div className="mt-[22px] text-[14.5px] text-[#bfe0d3]">— [Pseudonym], supported through our GBV programme</div>
-            <p className="mt-2.5 text-[12.5px] text-[#9dc4b6] italic max-w-[52ch]">Template only. Real stories are published solely with documented, informed consent — using a pseudonym or full anonymity at the survivor’s choice.</p>
+            <Eyebrow className="text-[#bfe0d3]">Turning pain into purpose</Eyebrow>
+            <blockquote className="font-display text-[clamp(24px,2.8vw,32px)] leading-[1.32] mt-[18px]">“My survival was never meant to be a private victory — it was a blueprint for helping others.”</blockquote>
+            <div className="mt-[22px] text-[14.5px] text-[#bfe0d3]">— [Founder’s name], Founder of Arise Strong Together · survivor and counsellor</div>
+            <p className="mt-2.5 text-[12.5px] text-[#9dc4b6] italic max-w-[52ch]">Our founder’s own story. Add their name and photo when ready.</p>
           </Reveal>
           <Reveal className="aspect-[5/4] rounded-[20px] border border-white/[.14] relative" >
             <div className="absolute inset-0 rounded-[20px]" style={{ background: "radial-gradient(90% 80% at 30% 20%,rgba(201,138,59,.4),rgba(201,138,59,0) 60%), linear-gradient(135deg,#2E5E4E,#1A3B32)" }} />

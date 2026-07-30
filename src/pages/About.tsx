@@ -4,17 +4,19 @@ import { Banner, Crumb } from "@/components/blocks/Banner";
 import { Section, SectionHead } from "@/components/blocks/Section";
 import { CtaBand } from "@/components/blocks/CtaBand";
 
-const values = [
-  ["Dignity", "We treat every person we serve with respect, never judgment."],
-  ["Survivor-centred", "Survivors lead their own journeys; we follow their pace and choices."],
-  ["Safety & Confidentiality", "We protect the privacy and wellbeing of everyone who trusts us."],
-  ["Community & Solidarity", "Lasting change happens with communities, not to them."],
-  ["Integrity & Accountability", "We are transparent with the people we serve and those who support us."],
+const values: [string, string][] = [
+  ["Empowerment", "Equipping people with the tools, knowledge, and confidence to take charge of their own futures."],
+  ["Zero Tolerance for GBV", "Steadfast in ending gender-based violence — a safe, non-judgmental space where survivors are believed, supported, and empowered to heal."],
+  ["Integrity", "Acting with transparency, honesty, and accountability in every project and every shilling."],
+  ["Compassion", "Meeting every individual with empathy, dignity, and a non-judgmental heart."],
+  ["Inclusivity", "Embracing the diversity of our community, ensuring every voice — especially women and youth — is heard and respected."],
+  ["Collaboration", "Working with local partners, government agencies, and community members to create lasting, sustainable change."],
+  ["Resilience", "Fostering the strength not just to survive, but to rise and flourish together."],
 ];
-const milestones = [
-  ["[YEAR]", "Arise Strong Together is founded."],
-  ["[YEAR]", "[First programme launched]."],
-  ["[YEAR]", "[Major partnership / expansion]."],
+const milestones: [string, string][] = [
+  ["2025", "Arise Strong Together is formally registered as a community-based organisation (CBO) in June."],
+  ["2025", "Safe spaces established for survivors to break the silence and access support."],
+  ["[YEAR]", "[Next milestone — e.g. economic-empowerment groups launched]."],
   ["[YEAR]", "[Reach milestone]."],
 ];
 
@@ -27,18 +29,20 @@ export default function About() {
       <Section>
         <div className="grid lg:grid-cols-[1fr_340px] gap-14 items-start">
           <Reveal className="prose">
-            <h2>Our Story</h2>
-            <p>Arise Strong Together was founded in [YEAR] by [FOUNDER / FOUNDING STORY]. What started as [modest beginning] grew as more survivors came forward and more community members chose to stand with them.</p>
-            <p>We saw that survivors often had somewhere to turn in a crisis, but far less support for what came after — the long work of healing, rebuilding confidence, and regaining independence. Arise Strong Together was created to fill that gap: to walk the whole journey, not just the first step.</p>
-            <p>Since then, we have grown into [current scale / reach], but our commitment has stayed the same.</p>
+            <h2>Turning Pain into Purpose</h2>
+            <p>Arise Strong Together grew out of one survivor’s journey. Our founder lived through gender-based violence and, through specialised healing and GBV training, not only rebuilt her own strength but came to understand — firsthand — the gaps in the support available to others.</p>
+            <p>That personal healing became the catalyst for something larger. She saw how many people in the community were caught in cycles of silence, without a safe space or the professional tools to recover. Determined that no one else should walk that path alone, she founded Arise Strong Together.</p>
+            <p>What began as a personal mission to heal became a structured community movement. We formally registered as <strong>Arise Strong Together CBO in June 2025</strong> — a platform where counselling, advocacy, and empowerment meet. By combining professional counselling training with lived experience as a survivor, we approach every person with genuine empathy and expert guidance.</p>
             <h2>Mission</h2>
-            <p>To support survivors of gender-based violence to heal and reclaim their lives, while working alongside communities to prevent violence and advance gender equality.</p>
+            <p>To support survivors of gender-based violence to heal and reclaim their lives, and to work alongside women, youth, and the wider community to prevent violence and build a future free from GBV.</p>
             <h2>Vision</h2>
-            <p>A society free from gender-based violence — where every person lives with dignity, safety, and equal opportunity.</p>
+            <p>A community — and a society — free from gender-based violence, where every person, especially women and youth, can live with dignity, safety, and opportunity.</p>
+            <h2>Why We Rise</h2>
+            <p>We exist to prove that healing is possible, and that community support is the bridge to a better future — helping others turn their experiences into strength so that, together, we can all arise.</p>
           </Reveal>
           <Reveal className="bg-white border border-sage-line rounded-[14px] p-[26px] lg:sticky lg:top-[100px]">
             <h3 className="text-xl mb-2">At a glance</h3>
-            {[["[YEAR]", "Founded"], ["[LOCATION]", "Based in"], ["[X]", "Survivors supported"]].map(([a, b]) => (
+            {([["2025", "Registered as a CBO"], ["[LOCATION]", "Based in [LOCATION], Kenya"], ["300", "Women & girls supported"]] as [string, string][]).map(([a, b]) => (
               <p key={b} className="mb-2"><span className="font-display text-2xl text-ochre">{a}</span><br /><span className="text-[13px] text-muted">{b}</span></p>
             ))}
           </Reveal>
@@ -69,7 +73,7 @@ export default function About() {
             </Reveal>
           ))}
         </div>
-        <p className="text-center mt-5 text-[13px] text-muted italic">Add leadership headshots and bios.</p>
+        <p className="text-center mt-5 text-[13px] text-muted italic">Add leadership headshots and bios — starting with the founder’s.</p>
       </Section>
 
       <Section variant="sage">
